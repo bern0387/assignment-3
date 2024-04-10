@@ -10,7 +10,7 @@ header {
 
 .wrapper {
     max-width: 940px;
-    margin: 0;
+    margin: 0 auto;
 }
 
 header div {
@@ -37,7 +37,8 @@ a {
     display: flex;
     height: 600px;
     background-image: url(../images/hands-typing.jpg);
-    background-size: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
     filter: grayscale(70%);
     justify-content: center;
     align-items: center;
@@ -53,10 +54,9 @@ h1 {
     padding: 10px;
 }
 
-#about-me {
+.about-me {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 940px;
     justify-content: center;
     align-items: center;
 }
@@ -66,10 +66,14 @@ img {
 }
 
 #services {
+  background-color: #fafafa;  
+}
+
+.services {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    background-color: #fafafa;
+    gap: 20px;
+    padding: 40px;
 }
 
 #services article {
@@ -77,11 +81,14 @@ img {
     flex-direction: column;
     background-color: #fff;
     align-items: flex-start;
+    padding: 1em;
 }
 
-#services article h2 {
-    max-width: 940px;
-    align-self: center;
+#services h2 {
+    text-align: center;
+    font-size: xx-large;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .box {
@@ -90,21 +97,22 @@ img {
     padding: 1em;
     grid-template-columns: repeat(3, 1fr);
     align-items: flex-start;
-    gap: 40px;
+    gap: 20px;
 }
 
-.box article {
+#services article {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
 .btn {
-    margin: 0 auto;
+    margin-top: auto;
     background-color: #000;
     padding: 20px;
     border-color: #000;
     color: #fff;
+    border-radius: 3px;
 }
 
 .box a:link,
@@ -126,14 +134,17 @@ img {
     display: grid; 
     grid-area: span;
     justify-content: center;
+    padding: 40px;
 }
 
-#work h2 {
-    max-width: 600px;
-    align-items: center;
+#work h2,
+#work p {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
-.piece {
+.work {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: 
@@ -142,23 +153,23 @@ img {
     ;
 }
 
-.piece img:nth-child(1) {
+.work img:nth-child(1) {
     grid-area: img1;
 }
 
-.piece img:nth-child(2) {
+.work img:nth-child(2) {
     grid-area: img2;
 }
 
-.piece img:nth-child(3) {
+.work img:nth-child(3) {
     grid-area: img3;
 }
 
-.piece img:nth-child(4) {
+.work img:nth-child(4) {
     grid-area: img4;
 }
 
-.piece img:nth-child(5) {
+.work img:nth-child(5) {
     grid-area: img5;
 }
 
